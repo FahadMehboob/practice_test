@@ -6,13 +6,11 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.amber,
-      body: Builder(builder: (context) {
-        return const SafeArea(
-          child: CalculatorView(),
-        );
-      }),
+      body: SafeArea(
+        child: CalculatorView(),
+      ),
     );
   }
 }
